@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Wedding Invitation</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+
+</head>
+
+<body>
+  <div class="background-image">
+    <img src="./Images/flower-left.png" alt="Left Flower" class="flower-left swing-image">
+
+    <h1>Create Your Wedding Invitation</h1> <!-- Moved h1 here -->
+
+    <div class="invitation-container">
+      <form>
+        <table class="invitation-table" width="100%">
+          <tr>
+            <td><label for="groom-name">Groom's Name:</label></td>
+            <td><input type="text" id="groom-name" name="groom-name"></td>
+          </tr>
+
+          <tr>
+            <td><label for="bride-name">Bride's Name:</label></td>
+            <td><input type="text" id="bride-name" name="bride-name"></td>
+          </tr>
+
+          <tr>
+            <td><label for="date">Wedding Date:</label></td>
+            <td><input type="date" id="date" name="date"></td>
+          </tr>
+
+          <tr>
+            <td><label for="time">Wedding Time:</label></td>
+            <td><input type="time" id="time" name="time"></td>
+          </tr>
+
+          <tr>
+            <td><label for="venue">Wedding Venue:</label></td>
+            <td><input type="text" id="venue" name="venue"></td>
+          </tr>
+
+        </table>
+        <button type="submit">Generate Invitation</button>
+      </form>
+      
+    </div>
+    <img src="./Images/flower-right.png" alt="Right Flower" class="flower-right swing-image">
+
+    
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

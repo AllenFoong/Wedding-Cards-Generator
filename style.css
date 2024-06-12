@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+.background-image {
+    background-image: url(./Images/background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+body {
+    font-family: 'Great Vibes', cursive;
+    margin: 0;
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 80px;
+    color: #eb96cf;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    transition: font-size 0.3s ease;
+  }
+  
+  .flower-left {
+    position: absolute;
+    left: 320px;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: 170px;
+    transition: left 0.3s ease, max-width 0.3s ease;
+  }
+  
+  .flower-right {
+    position: absolute;
+    right: 320px;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: 200px;
+    transition: right 0.3s ease, max-width 0.3s ease;
+  }
+  .swing-image {
+    width: 100%;
+    height: auto;
+    animation: swing 3s ease-in-out infinite;
+    transform-origin: bottom center; /* Point around which the image swings */
+}
+
+@keyframes swing {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(10deg); }
+    50% { transform: rotate(0deg); }
+    75% { transform: rotate(-10deg); }
+    100% { transform: rotate(0deg); }
+}
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 60px;
+    }
+  
+    .flower-left {
+      left: 10px;
+      max-width: 120px;
+    }
+  
+    .flower-right {
+      right: 10px;
+      max-width: 140px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 40px;
+    }
+  
+    .flower-left {
+      left: 5px;
+      max-width: 80px;
+    }
+  
+    .flower-right {
+      right: 5px;
+      max-width: 100px;
+    }
+  }
+.invitation-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 400px;
+    margin: 0 auto;
+    /* Adjust margin */
+    display: flex;
+    flex-direction: column;
+}
+
+.invitation-container2 {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 200px 60px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    background-image: url('./Images/flower2.png'), url('./Images/container2.jpg');
+    background-size:100% 100%,cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.invitation-table td {
+    text-align: right;
+    font-family:'Times New Roman', Times, serif;
+}
+
+label {
+    margin-bottom: 5px;
+    text-align: center;
+    width: 100%;
+}
+
+
+.download-btn {
+    /* Button styles */
+    background-color: #511edb;
+    border: none;
+    color: white;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    max-width: 300px;
+    /* Add this line */
+    margin: 20px auto;
+}
+
