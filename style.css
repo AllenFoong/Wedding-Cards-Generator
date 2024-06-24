@@ -88,6 +88,23 @@ h1 {
       max-width: 100px;
     }
   }
+  @media (max-width: 1024px) {
+    h1 {
+        font-size: 50px;
+    }
+
+    .flower-left, .flower-right {
+        max-width: 130px;
+    }
+
+    .flower-left {
+        left: 10px;
+    }
+
+    .flower-right {
+        right: 10px;
+    }
+}
   @media (max-width: 1032px) {
       /* Adjustments for 1032px screen size */
     .flower-left {
