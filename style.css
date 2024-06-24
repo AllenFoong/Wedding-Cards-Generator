@@ -88,6 +88,18 @@ h1 {
       max-width: 100px;
     }
   }
+@media (max-width: 1032px) {
+  /* Adjustments for 1032px screen size */
+  .flower-left {
+    left: 20px;
+    max-width: 120px;
+  }
+
+  .flower-right {
+    right: 20px;
+    max-width: 120px;
+  }
+}
 .invitation-container {
     background-color: rgba(255, 255, 255, 0.9);
     padding: 20px;
